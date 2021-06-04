@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function validation() {
+        a = document.getElementById("txt1").value;
+        b = document.getElementById("em").value;
+        c = document.getElementById("pwd").value;
+        d = document.getElementById("pwd2").value;
+        e = document.getElementById("num").value;
+        f = document.getElementById("dt").value;
+        g = document.getElementById("pwd2").value;
+        if (
+          a == "" &&
+          b == "" &&
+          c == "" &&
+          d == "" &&
+          e == "" &&
+          f == "" &&
+          g == ""
+        ) {
+          alert("Please Enter all the values!!");
+          return false;
+        } else if (
+          a == "" ||
+          b == "" ||
+          c == "" ||
+          d == "" ||
+          e == "" ||
+          f == "" ||
+          g == ""
+        ) {
+          alert("Please enter all the values!!");
+          return false;
+        }
+      }
+
+      function auto() {
+        document.getElementById("txt1").value = "scott";
+        document.getElementById("em").value = "scott1234@gmail.com";
+        document.getElementById("pwd").value = "54321";
+        document.getElementById("pwd2").value = "54321";
+        document.getElementById("num").value = "21";
+        document.getElementById("dt").value = "07/06/2000";
+        document.getElementById("m").checked == true;
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+    <center><h1>Welcome to Sign Up form</h1></center>
+    <form onsubmit="return validation()" id="fr">
+      <p id="p1" style="color: firebrick"></p>
+      <div>
+        <label>Username:</label>
+        <input type="text" name="txt1" id="txt1" placeholder="Type your name" />
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" name="em" id="em" placeholder="Type your email" />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="pwd" id="pwd" placeholder="Password" />
+      </div>
+      <div>
+        <label>Confirm Password:</label>
+        <input
+          type="password"
+          name="pwd2"
+          id="pwd2"
+          placeholder="Confirm Password"
+        />
+      </div>
+      <div>
+        <label>Age:</label>
+        <input type="number" name="num" id="num" placeholder="Age" />
+      </div>
+      <div>
+        <label>DOB</label>
+        <input type="date" name="dt" id="dt" />
+      </div>
+      <div>
+        <label>Gender:</label>
+        <input type="radio" name="m" id="m" value="Male" />Male
+        <input type="radio" name="m" id="f" value="Female" />Female
+      </div>
+      <input type="submit" name="sub" id="sub" value="Sign Up" />
+      <input type="reset" value="Reset" id="rs" />
+    </form>
+    <button id="at" onclick="return auto()">Auto Fill</button>
+  </body>
+  <!-- <script src="script.js"></script> -->
+</html>

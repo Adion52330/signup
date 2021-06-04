@@ -1,0 +1,66 @@
+* {
+  font-family: "Mate SC", serif;
+  /* background: url("assets/1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white; */
+  background-color: violet;
+}
+
+#fr {
+  margin: 10px;
+  padding: 10px;
+  border: #00ff00 10px ridge;
+}
+
+#fr div {
+  margin: 5px;
+  padding: 5px;
+}
+
+label {
+  font-size: 1.7pc;
+}
+
+#txt1,
+#pwd,
+#pwd2,
+#num,
+#dt,
+#sub,
+#rs,
+#at,
+#em {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  font-size: 1.5pc;
+  border-bottom: cyan 2px solid;
+}
+
+#txt1,
+#pwd,
+#pwd2,
+#num,
+#dt,
+#sub,
+#rs,
+#at,
+#em {
+  background-color: violet;
+  color: turquoise;
+}
+
+#sub,
+#rs,
+#at {
+  text-align: center;
+  font-size: 1.5pc;
+  color: black;
+  margin: 2pc;
+  width: 75%;
+  margin-left: 132px;
+  background-color: brown;
+}
